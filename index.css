@@ -1,0 +1,82 @@
+.animation{
+	width:infinite;
+	height:50px;
+	background-color: red;
+	justify-content:center;
+	animation: movingsq 7s infinite;
+	text-align:center;
+}
+.block{
+	width:100px;
+	height:100px;
+	background-color: gray;
+	border-radius:15px;
+	justify-content: center;
+	animation: blocksq 6s infinite;
+	display: flex;
+	align-items: center;
+	
+}
+body{
+	background-color : beige;
+}
+@keyframes blocksq{
+	0%{
+	background-color : gray;
+		transform: translate(0px ,100px) rotate(0deg);
+		
+}
+30%{
+	background-color:white;
+		transform: translate(500px ,100px) rotate(180deg);
+		
+}
+60%{
+	background-color: gray;
+		transform: translate(1000px ,100px) rotate(360deg);	
+}
+80%{
+	background-color:white;
+		transform: translate(1500px ,100px) rotate(540deg);	
+}
+100%{
+	background-color: gray;
+		transform: translate(2005px ,100px) rotate(720deg);	
+}
+}
+@keyframes movingsq {
+	0% {
+		background-color : red;
+		
+	}
+	20%{
+		background-color : orange;
+		
+	}
+	40%{
+		background-color : yellow ;
+		
+	}
+	60%{
+		background-color : green;
+		
+	}
+	75%{
+		background-color : blue;
+		
+	}
+	85%{
+		background-color : indigo;
+		
+	}
+	95%{
+		background-color : violet;
+		
+	}
+	100%{
+		background-color : red;
+		
+	}
+}
+	
+		
